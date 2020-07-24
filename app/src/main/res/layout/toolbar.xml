@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/notes_tool_bar"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_last_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:padding="@dimen/_5sdp"
+        android:background="@null"
+        android:src="@drawable/ic_action_fab_add" />
+
+
+</androidx.appcompat.widget.Toolbar>
+
+
+<!--<androidx.appcompat.widget.AppCompatImageButton-->
+<!--android:id="@+id/ib_prev_btn"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_gravity="start"-->
+<!--android:background="@null"-->
+<!--android:contentDescription="@string/app_name"-->
+<!--android:src="@drawable/ic_action_back" />-->

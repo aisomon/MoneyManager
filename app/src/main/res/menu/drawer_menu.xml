@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view"
+    >
+
+
+    <group android:checkableBehavior="single">
+
+        <!-- for the navigation icon resizing : need to add something in dimens-->
+        <item
+            android:id="@+id/item_time_line"
+            android:title="@string/timeline"
+            android:icon="@drawable/ic_launcher_time_line"
+            />
+        <item
+            android:id="@+id/item_upgrade"
+            android:title="@string/update_budget"
+            android:icon="@drawable/ic_launcher_buddge"
+            />
+        <item
+            android:id="@+id/item_view_expenses"
+            android:title="@string/view_all_expenses"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            />
+
+        <item
+            android:id="@+id/item_calculator"
+            android:title="@string/calculator"
+            android:icon="@drawable/ic_launcher_calculator"
+            />
+
+        <item
+            android:id="@+id/item_reset_total"
+            android:title="@string/reset_total"
+            android:icon="@drawable/ic_launcher_reset_total"
+            />
+
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/item_share"
+                android:title="@string/share"
+                android:icon="@drawable/ic_launcher_share"/>
+
+            <item
+                android:id="@+id/item_logout"
+                android:title="@string/logout"
+                android:icon="@drawable/ic_launcher_logout"/>
+        </menu>
+    </item>
+</menu>

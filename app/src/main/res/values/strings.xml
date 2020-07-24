@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MoneyManager</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="food">Food</string>
+    <string name="recharge">Recharge</string>
+    <string name="shopping">Shopping</string>
+    <string name="transport">Transport</string>
+    <string name="exchange">Exchange</string>
+    <string name="notes">Notes</string>
+    <string name="others">Others</string>
+    <string name="timeline">Timeline</string>
+    <string name="reset_total">Reset Total Budget</string>
+    <string name="update_budget">Update Budget</string>
+    <string name="calculator">Calculator</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="logout">Logout</string>
+    <string name="user_name">Email</string>
+    <string name="reg_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">LogIn</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_date_tv">29/03/2020-30/03/2020</string>
+    <string name="budget">Budget :</string>
+    <string name="_600">600</string>
+    <string name="expense">Expense :</string>
+    <string name="_100">100</string>
+    <string name="_500">500</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log in</string>
+    <string name="reg_register">Register</string>
+    <string name="enter_your_secure_word">Enter your SecureWord</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="mrs_abcd">Mrs Abcd</string>
+    <string name="notes_tool_bar">Notes</string>
+    <string name="note_description">Description</string>
+    <string name="note_title">Title</string>
+    <string name="note_date">Date</string>
+    <string name="expense_chart">Expense chart</string>
+    <string name="enter_your_new_password">Enter your new password</string>
+    <string name="please_re_enter_your_new_password">Re-enter your new password</string>
+    <string name="confirm">Confirm</string>
+    <string name="welcome">Welcome</string>
+    <string name="lend_borrow_amount">Amount :</string>
+    <string name="lend_borrow_date">Date: </string>
+    <string name="lend_borrow_name">Name: </string>
+    <string name="description">Description</string>
+    <string name="add_note_title">Title</string>
+    <string name="add_note_save">Save</string>
+    <string name="lend_borrow_exchange">Exchange Money</string>
+    <string name="expenses_view">Expenses View</string>
+    <string name="total_expenses_for_food">Total Expenses :</string>
+    <string name="view_all_expenses">View All Expenses</string>
+    <string name="_20_05_2020">20/05/2020</string>
+    <string name="_00_00">00.00</string>
+    <string name="home_welcome">Welcome</string>
+    <string name="tv_description">Description :</string>
+
+</resources>

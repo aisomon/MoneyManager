@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashboard_background_gradient" >
+
+
+
+        <RelativeLayout
+            android:id="@+id/top_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/reg_student"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_relative_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_margin="@dimen/_25sdp">
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/text_size_28sp"
+                        android:padding="@dimen/_5sdp"
+                        android:textStyle="bold" />
+
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/reg_ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="0dp"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/dark_sky_blue" />
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/reg_ed_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="0dp"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"
+                        android:textColorHint="@color/dark_sky_blue" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/reg_ed_conf_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="0dp"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/dark_sky_blue" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_your_secure_word"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:textColorHint="@color/dark_sky_blue"
+                        app:helperTextEnabled="true"
+                        app:helperText="Secure word will required to change or recover your password."
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/ed_security_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="10dp"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_button_shape"
+                        android:text="@string/register"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/textsize_18sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/already_have_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/already_have_an_account_log_in"
+                        android:textColor="@color/dark_sky_blue"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+<!--<androidx.appcompat.widget.AppCompatEditText-->
+<!--android:id="@+id/reg_ed_name"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:paddingStart="@dimen/_10sdp"-->
+<!--android:paddingEnd="0dp"-->
+<!--android:hint="@string/name"-->
+<!--android:textColorHint="@color/dark_sky_blue" />-->

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/app_bar_main"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.6"
+            android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:weightSum="4">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="33sp"
+                    android:text="@string/home_welcome"
+                    />
+
+            </LinearLayout>
+
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/mainGridId"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:columnCount="3"
+                    app:rowCount="3"
+                    android:padding="@dimen/_5sdp"
+                    app:alignmentMode="alignMargins"
+                    app:columnOrderPreserved="true"
+                    app:rowOrderPreserved="true">
+
+                    <!-- Row 1 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/bt_food_id"
+                            android:background="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_70sdp"
+                            android:src="@drawable/fooding"
+                            android:scaleType="centerInside"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/food"
+                            android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/bt_recharge_id"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_70sdp"
+                                android:src="@drawable/recharges"
+                                android:scaleType="centerInside"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recharge"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/bt_shopping_id"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_70sdp"
+                                android:src="@drawable/shopping"
+                                android:scaleType="centerInside"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/shopping"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/bt_transport_id"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_70sdp"
+                                android:src="@drawable/transport"
+                                android:scaleType="centerInside"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/transport"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:background="@color/black"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/bt_others_id"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_70sdp"
+                                android:src="@drawable/others"
+                                android:scaleType="centerInside"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/others"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/bt_exchange_id"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_70sdp"
+                                android:src="@drawable/money_exchange"
+                                android:scaleType="centerInside"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/exchange"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="@dimen/_10sdp"
+                        app:layout_rowWeight="1"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/bt_notes_id"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_70sdp"
+                                android:src="@drawable/notes"
+                                android:scaleType="centerInside"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/notes"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </androidx.gridlayout.widget.GridLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nevigation_back_gradient"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:itemIconTint="@color/sky_blue"
+            app:itemTextColor="#ffffff"
+            app:menu="@menu/drawer_menu">
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

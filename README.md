@@ -23,3 +23,8 @@ then the total amount you’ve transacted with the storeage.
 ![view all](https://user-images.githubusercontent.com/28469673/88410157-8f739b80-ce08-11ea-9cf7-38a9d2b99312.PNG)
 
 
+
+
+### Here is the APK file to Install your Android device
+Google drive link: https://drive.google.com/file/d/1g34lB9Snef4hLctRkWaUd2wFdoAIYZ4b/view?usp=sharing
+

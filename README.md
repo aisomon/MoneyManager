@@ -25,6 +25,6 @@ then the total amount you’ve transacted with the storeage.
 
 
 
-### Here is the APK file to Install your Android device
+### Here is the APK file to Install in your Android device
 Google drive link: https://drive.google.com/file/d/1g34lB9Snef4hLctRkWaUd2wFdoAIYZ4b/view?usp=sharing
 
